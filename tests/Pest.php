@@ -1,3 +1,5 @@
 <?php
 
-uses(Jeffersongoncalves\Tolt\Tests\TestCase::class)->in('Feature', 'Unit');
+use JeffersonGoncalves\Tolt\Tests\TestCase;
+
+uses(TestCase::class)->in('Feature', 'Unit');

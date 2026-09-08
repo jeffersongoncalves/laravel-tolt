@@ -1,16 +1,17 @@
 <?php
 
-namespace Jeffersongoncalves\Tolt\Facades;
+namespace JeffersonGoncalves\Tolt\Facades;
 
 use Illuminate\Support\Facades\Facade;
+use JeffersonGoncalves\Tolt\Tolt as ToltClient;
 
 /**
- * @see \Jeffersongoncalves\Tolt\Tolt
+ * @see ToltClient
  */
 class Tolt extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return 'laravel-tolt';
+        return ToltClient::class;
     }
 }

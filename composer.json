@@ -3,7 +3,12 @@
     "description": "Tolt affiliate and referral program API integration for Laravel",
     "keywords": [
         "laravel",
-        "laravel-tolt"
+        "tolt",
+        "affiliate",
+        "referral",
+        "partner-program",
+        "api",
+        "client"
     ],
     "homepage": "https://github.com/jeffersongoncalves/laravel-tolt",
     "license": "MIT",
@@ -15,8 +20,9 @@
     ],
     "require": {
         "php": "^8.2",
-        "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^12.0|^13.0"
+        "illuminate/http": "^12.0|^13.0",
+        "illuminate/support": "^12.0|^13.0",
+        "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
         "larastan/larastan": "^3.0",
@@ -27,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Jeffersongoncalves\\Tolt\\": "src/"
+            "JeffersonGoncalves\\Tolt\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Jeffersongoncalves\\Tolt\\Tests\\": "tests/"
+            "JeffersonGoncalves\\Tolt\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -52,10 +58,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jeffersongoncalves\\Tolt\\ToltServiceProvider"
+                "JeffersonGoncalves\\Tolt\\ToltServiceProvider"
             ],
             "aliases": {
-                "Tolt": "Jeffersongoncalves\\Tolt\\Facades\\Tolt"
+                "Tolt": "JeffersonGoncalves\\Tolt\\Facades\\Tolt"
             }
         }
     },
